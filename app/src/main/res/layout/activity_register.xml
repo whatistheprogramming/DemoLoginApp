@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuanshijia.demologinapp.RegisterActivity">
+
+
+        <EditText
+            android:id="@+id/register_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="用户名"
+            />
+
+        <EditText
+            android:id="@+id/register_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="密码"
+            />
+
+        <EditText
+            android:id="@+id/register_et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="邮箱"
+            />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <Button
+           android:id="@+id/register_btn_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="选择日期"
+           />
+
+        <TextView
+            android:id="@+id/register_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            />
+
+    </LinearLayout>
+        <!--<DatePicker-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:id="@+id/register_dp_time"-->
+            <!--android:datePickerMode="spinner"-->
+        <!--/>-->
+
+
+        <RadioGroup
+            android:id="@+id/register_rg_sex"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:id="@+id/register_men"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                />
+
+            <RadioButton
+                android:id="@+id/register_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                />
+        </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/register_cb_nba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NBA"
+            />
+
+        <CheckBox
+            android:id="@+id/register_cb_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音乐"
+            />
+
+        <CheckBox
+            android:id="@+id/register_cb_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电影"
+            />
+
+        <CheckBox
+            android:id="@+id/register_cb_internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上网"
+            />
+
+    </LinearLayout>
+        <EditText
+            android:id="@+id/register_et_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="自我介绍"
+            />
+
+        <Button
+            android:id="@+id/register_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            />
+
+
+</LinearLayout>
